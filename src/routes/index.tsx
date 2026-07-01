@@ -58,7 +58,6 @@ function Game() {
 
   // Empty desktop for a beat, then the "ready to start" dialog appears on its own.
   useEffect(() => {
-    playStartupSound();
     const id = window.setTimeout(() => setShowStartConfirm(true), 2000);
     return () => window.clearTimeout(id);
   }, []);
@@ -75,6 +74,7 @@ function Game() {
 
   function enterLogin() {
     playClickSound();
+    playStartupSound();
     setShowStartConfirm(false);
     setPhase("intro");
   }

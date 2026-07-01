@@ -17,20 +17,22 @@ const MILTON_SRC = "/assets/milton.png";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Slacque — a cursed corporate adventure" },
+      { title: "See Attached" },
       {
         name: "description",
         content:
-          "A nostalgically cursed Y2K-flavored corporate choose-your-own-adventure. Open a message. See what happens.",
+          "A cursed Y2K-flavored corporate choose-your-own-adventure — clear your inbox before an ordinary workday quietly abandons all logic.",
       },
-      // Placeholders below — fill in GAME_TITLE, ONE_LINE_PITCH, and GAME_URL
-      // once the real cover image and copy are ready.
-      { property: "og:title", content: "GAME_TITLE" },
-      { property: "og:description", content: "ONE_LINE_PITCH" },
-      { property: "og:image", content: "https://GAME_URL/cover-1200x630.png" },
+      { property: "og:title", content: "See Attached" },
+      {
+        property: "og:description",
+        content:
+          "A cursed Y2K-flavored corporate choose-your-own-adventure — clear your inbox before an ordinary workday quietly abandons all logic.",
+      },
+      { property: "og:image", content: "https://corporate-dreamscape-seven.vercel.app/assets/cover-1200x630.png" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: "https://GAME_URL/cover-1200x630.png" },
+      { name: "twitter:image", content: "https://corporate-dreamscape-seven.vercel.app/assets/cover-1200x630.png" },
     ],
   }),
   component: Game,

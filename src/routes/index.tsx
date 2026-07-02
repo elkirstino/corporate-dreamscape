@@ -29,10 +29,10 @@ export const Route = createFileRoute("/")({
         content:
           "A cursed Y2K-flavored corporate choose-your-own-adventure — clear your inbox before an ordinary workday quietly abandons all logic.",
       },
-      { property: "og:image", content: "https://corporate-dreamscape-seven.vercel.app/assets/cover-1200x630.png" },
+      { property: "og:image", content: "https://corporate-dreamscape-seven.vercel.app/assets/cover-v2-1200x630.png" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: "https://corporate-dreamscape-seven.vercel.app/assets/cover-1200x630.png" },
+      { name: "twitter:image", content: "https://corporate-dreamscape-seven.vercel.app/assets/cover-v2-1200x630.png" },
     ],
   }),
   component: Game,
